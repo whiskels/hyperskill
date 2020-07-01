@@ -431,6 +431,9 @@ files:
 - name: src/tictactoe/Main.java
   visible: true
   learner_created: true
+- name: src/tictactoe/TicTacToe.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/48/stages/259/implement
 status: Solved
 feedback:
