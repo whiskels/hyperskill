@@ -3,7 +3,7 @@ package tictactoe;
 import java.util.Scanner;
 
 public class Main {
-    private static int SIDE = 3;
+    private final static int SIDE = 3;
     private static char[][] gameField;
     private static Scanner sc;
     private static boolean isStopped, isXWin, isOWin, moveTurn;
@@ -14,8 +14,8 @@ public class Main {
         initializeGame();
         while (!isStopped) {
             move();
-            check();
             printState();
+            check();
         }
     }
 
@@ -29,9 +29,9 @@ public class Main {
         countX = 0;
         countO = 0;
         sc = new Scanner(System.in);
-        readField();
+        // readField(); // used when there is need to create initial state
         printState();
-        check();
+        // check(); // used to check initial state when presented
     }
 
     private static void printState() {
@@ -64,17 +64,16 @@ public class Main {
 
         for (int y = 0; y < SIDE; y++) {
             for (int x = 0; x < SIDE; x++) {
-                char currentChar = moves.charAt(counter);
-                gameField[y][x] = currentChar == '_' ? ' ' : currentChar;
+                if (counter < moves.length()) {
+                    char currentChar = moves.charAt(counter);
+                    gameField[y][x] = currentChar == '_' ? ' ' : currentChar;
 
-                if (currentChar == 'X') {
-                    countX++;
-                } else if (currentChar == 'O') {
-                    countO++;
-                }
-                counter++;
-                if (counter >= moves.length()) {
-                    break;
+                    if (currentChar == 'X') {
+                        countX++;
+                    } else if (currentChar == 'O') {
+                        countO++;
+                    }
+                    counter++;
                 }
             }
         }
@@ -135,6 +134,7 @@ public class Main {
             isStopped = true;
             System.out.println(String.format("%s wins", isXWin ? "X" : "O"));
         } else if (countX + countO == SIDE * SIDE) {
+            isStopped = true;
             System.out.println("Draw");
         } else if (!isStopped) {
             System.out.println("Game not finished");
