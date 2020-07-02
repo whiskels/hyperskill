@@ -12,21 +12,21 @@ Contains solved problems and created projects.
 ## Details
 
 ### Coffee machine
-[Info.](https://hyperskill.org/projects/33) [Solution](../Coffee%20Machine/task/src/)
+[Info.](https://hyperskill.org/projects/33) [Solution](https://github.com/whiskels/hyperskill/tree/master/Coffee%20Machine/task/src)
 
 Write the software for a simulation of a real-world coffee machine. 
 
 Fully solved
 
 ### Tic Tac Toe
-[Info.](https://hyperskill.org/projects/48) [Solution](../Tic-Tac-Toe/Tic-Tac-Toe/task/src/tictactoe/)
+[Info.](https://hyperskill.org/projects/48) [Solution](https://github.com/whiskels/hyperskill/tree/master/Tic-Tac-Toe)
 
 Everybody remembers this paper-and-pencil game from childhood: Tic-Tac-Toe, also known as Noughts and crosses or Xs and Os. A single mistake usually costs you the game, but thankfully it is simple enough that most players discover the best strategy quickly. Let’s program Tic-Tac-Toe and get playing! 
 
 Fully solved
 
 ### Readability estimator
-[Info.](https://hyperskill.org/projects/39) [Solution](../Readability Score/Readability Score/task/src/readability/)
+[Info.](https://hyperskill.org/projects/39) [Solution](https://github.com/whiskels/hyperskill/tree/master/Readability%20Score/Readability%20Score/task/src/readability)
 
 Everyone has their own personal reading history, and as we grow up, we are able to comprehend more and more complicated texts. But how do you estimate the level of difficulty of a given text, and how do you teach a computer to do that? In this project, you will find it out: write a program that determines how difficult the text is and for which age it is most suitable.
 
