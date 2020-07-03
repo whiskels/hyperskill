@@ -19,7 +19,7 @@ Write the software for a simulation of a real-world coffee machine.
 Fully solved
 
 ### Tic Tac Toe
-[Info.](https://hyperskill.org/projects/48) [Solution](https://github.com/whiskels/hyperskill/tree/master/Tic-Tac-Toe)
+[Info.](https://hyperskill.org/projects/48) [Solution](https://github.com/whiskels/hyperskill/tree/master/Tic-Tac-Toe/Tic-Tac-Toe/task/src/tictactoe)
 
 Everybody remembers this paper-and-pencil game from childhood: Tic-Tac-Toe, also known as Noughts and crosses or Xs and Os. A single mistake usually costs you the game, but thankfully it is simple enough that most players discover the best strategy quickly. Let’s program Tic-Tac-Toe and get playing! 
 

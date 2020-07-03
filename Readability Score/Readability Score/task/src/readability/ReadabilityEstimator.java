@@ -2,7 +2,6 @@ package readability;
 
 import java.nio.file.*;
 import java.util.*;
-import java.util.function.IntPredicate;
 
 public class ReadabilityEstimator {
     private static final HashMap<Integer, String> AGE;
@@ -76,29 +75,6 @@ public class ReadabilityEstimator {
             e.printStackTrace();
         }
 
-    }
-
-    private int countSyllablesWithPredicate(IntPredicate predicate) {
-        return Arrays.stream(words)
-                .mapToInt(word -> {
-                    word = word.charAt(word.length() - 1) == 'e' ? word.substring(0, word.length() - 1) : word;
-                    boolean isConsecutiveVowel = false;
-                    int syllables = 0;
-                    for (char ch : word.toCharArray()) {
-                        if (VOWELS.contains(ch)) {
-                            if (!isConsecutiveVowel) {
-                                syllables++;
-                            }
-                            isConsecutiveVowel = true;
-                        } else {
-                            isConsecutiveVowel = false;
-                        }
-                    }
-
-                    return syllables > 0 ? syllables : 1;
-                })
-                .filter(predicate)
-                .sum();
     }
 
     private int countSyllables() {
