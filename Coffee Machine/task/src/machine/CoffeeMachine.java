@@ -31,27 +31,28 @@ public class CoffeeMachine {
     }
 
     private void work() {
-        if (currentStatus == status.WAITING) {
-            printMsg("Write action (buy, fill, take, remaining, exit):");
-            switch (sc.next()) {
-                case "buy":
-                    currentStatus = status.MAKING_COFFEE;
-                    chooseCoffee();
-                    break;
-                case "fill":
-                    currentStatus = status.FILL;
-                    fill();
-                    break;
-                case "take":
-                    giveMoney();
-                    break;
-                case "remaining":
-                    printStatus();
-                    break;
-                case "exit":
-                    currentStatus = status.EXIT;
-                    break;
-            }
+        switch (currentStatus) {
+            case WAITING:
+                printMsg("Write action (buy, fill, take, remaining, exit):");
+                switch (sc.next()) {
+                    case "buy":
+                        currentStatus = status.MAKING_COFFEE;
+                        chooseCoffee();
+                        break;
+                    case "fill":
+                        currentStatus = status.FILL;
+                        fill();
+                        break;
+                    case "take":
+                        giveMoney();
+                        break;
+                    case "remaining":
+                        printStatus();
+                        break;
+                    case "exit":
+                        currentStatus = status.EXIT;
+                        break;
+                }
         }
     }
 
