@@ -1,5 +1,7 @@
 # Hyperskill tasks & projects
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2fb92345e6234c5986b25dfcf8c5aa8e)](https://app.codacy.com/manual/whiskels/hyperskill?utm_source=github.com&utm_medium=referral&utm_content=whiskels/hyperskill&utm_campaign=Badge_Grade_Dashboard)
+
 [Profile](https://hyperskill.org/profile/44756430)
 
 Contains solved problems and created projects.
